@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+
+
+body{
+    background-color: rgba(247, 244, 244, 0.7);
+}
+.main {
+    display: flex;
+    justify-content: center;
+    height: 97vh;
+    margin: 0px;
+
+    overflow: hidden;
+
+}
+
+.card {
+    position: absolute;
+    width: 25%;
+}
+
+.data {
+    width: 58%;
+    margin: 0px 10px;
+    margin-left: 15%;
+    margin-left: 15%;
+    padding-left: 10px;
+    right: 13%;
+}
+
+.awards {
+    background-color: rgba(129, 46, 46, 0.7);
+    width: 13%;
+}
+.card{
+    display: block;
+    left: 0%;
+    padding: 30px 10px;
+    background-color: rgba(78, 42, 42, 0.7);
+    transition: 0.5s;
+    overflow: hidden;
+    max-height: 85%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.card .date span{
+    font-size: 1.8em;
+    font-family: 'Belanosima', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+}
+.card:hover {
+    position: absolute;
+    min-width: 79%;
+    background-color:  rgba(78, 42, 42, 0.95);
+    border-radius: 20px;
+    display: flex;
+    height: 85vh;
+    
+   
+
+}
+
+
+
+.card:hover .content{
+    opacity: 1;
+    visibility: visible;
+    margin: 15px;
+    padding: 5px 10px;
+
+}
+.card:hover .image{
+    min-width: 25%;
+}
+
+.card img:first-child{
+    padding: 0px 9px ;
+    width: 96%;
+}
+
+.card .content{
+    color: antiquewhite;
+    transition: 0s;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 0px;
+    font-size: 1em;
+}
+
+.card .content span{
+    font-size: 2.3em;
+}
+.date{
+    font-size: 1.7em;
+    color: rgba(238, 231, 231, 1);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul{
+    color: rgba(238, 231, 231, 1);
+    font-weight: lighter;
+    font-size: 1.05em;
+    
+}
+li{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.data{
+    padding: 11px 7px 2px 7px;
+    min-height: 98%;
+}
+
+.data span{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 3.2em;
+    color: rgba(0, 0, 0,1);
+}
+
+.data p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 0.95em;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+.data p font{
+    font-weight: bolder;
+}
+.awards{
+    position: absolute;
+    right: 1px;
+    background-color: rgba(138, 71, 71, 0.7)
+}
+
+
+.container{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container .cards{
+    position: relative;
+    width: 85%;
+    height: 183px;
+    margin: 11px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 12%;
+    background-color: rgba(255, 255, 255, 0.103);
+    overflow: hidden;
+
+    border-top: 3px solid rgba(255, 255, 255, 0.503);
+    border-left: 2px solid rgba(255, 255, 255, 0.503);
+    
+}
+
+
+.container .cards .contents{
+    text-align: center;
+    margin: 0px;
+    padding: 0px 15px;
+    position: absolute;
+    top: 120px;
+   
+    
+}
+/*movement of text*/
+.container .cards .contents span{
+    
+    transition: 0.5s;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.container .cards:hover .contents span{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.cards .image img{
+    justify-content: center;
+    width: 100%;
+    height: 130px;
+    opacity: 0.9;
+}
+
+.container .cards .contents p{
+   
+    font-size: 1.1em;
+    color: black;
+    font-weight: 200;
+
+}
